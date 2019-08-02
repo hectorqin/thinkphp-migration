@@ -1,0 +1,29 @@
+{
+  "name": "hectorqin/thinkphp-migration",
+  "description": "Database migration.",
+  "type": "think-extend",
+  "license": "Apache-2.0",
+  "authors": [
+      {
+          "name": "hectorqin",
+          "email": "hectorqin@163.com"
+      }
+  ],
+  "autoload": {
+    "psr-4": {
+      "think\\migration\\": "src"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "require": {
+    "robmorgan/phinx": "0.10.*",
+    "topthink/framework": "5.1.*"
+  },
+  "extra": {
+      "think-config": {
+          "migration": "src/config.php"
+      }
+  }
+}
